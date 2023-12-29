@@ -27,3 +27,9 @@ def getPrimeFactorization(number):
             number = number / factor
         factorization[factor] = count
     return factorization
+
+def sumOfFirst(n):
+    return (n * (n + 1)) / 2
+
+def sumOfFirstSquared(n):
+    return (n * (n + 1) * (2 * n + 1)) / 6
