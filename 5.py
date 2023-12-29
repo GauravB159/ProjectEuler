@@ -1,7 +1,7 @@
 from lib import getPrimeFactorization
 from math import pow
 
-def getEvenlyDivisible(limit):
+def process(limit):
     factors = []
     for i in range(limit):
         factors.append(getPrimeFactorization(i + 1))
@@ -18,4 +18,4 @@ def getEvenlyDivisible(limit):
         result *= pow(key, max_factors[key])
     return int(result)
 
-print(getEvenlyDivisible(300))
+print(process(20))

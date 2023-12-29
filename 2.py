@@ -1,5 +1,6 @@
 cache = {}
 
+
 def fib(n):
     if cache.get(n):
         return cache[n]
@@ -10,13 +11,16 @@ def fib(n):
     cache[n] = fib(n - 1) + fib(n - 2)
     return cache[n]
 
-result = 0
 
-for i in range(100):
-    check = fib(i)
-    if check > 4_000_000:
-        break
-    if check % 2 == 0:
-        result += check
-    
-print(result)
+def process(n):
+    result = 0
+    for i in range(n):
+        check = fib(i)
+        if check > 4_000_000:
+            break
+        if check % 2 == 0:
+            result += check
+    return result
+
+
+print(process(100))

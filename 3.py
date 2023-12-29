@@ -1,7 +1,7 @@
 from lib import getPrimes
 from math import sqrt
 
-def getLargestPrimeFactor(number):
+def process(number):
     primes = getPrimes(int(sqrt(number)))
     result = 0
     for prime in primes:
@@ -10,4 +10,4 @@ def getLargestPrimeFactor(number):
     
     return result
 
-print(getLargestPrimeFactor(600_851_475_143))
+print(process(600_851_475_143))
