@@ -42,3 +42,10 @@ def timed(f):
         print()
         return result
     return inner
+
+def convert2DArrayToGrid(arr):
+    grid = {}
+    for i, row in enumerate(arr):
+        for j, col in enumerate(row):
+            grid[complex(i, j)] = col
+    return grid
