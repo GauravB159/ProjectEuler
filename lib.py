@@ -1,3 +1,5 @@
+import math
+
 def getPrimes(limit):
     primes = [False] * (limit + 1)
     i = 2
@@ -7,5 +9,21 @@ def getPrimes(limit):
         i += 1
     return [i for i, x in enumerate(primes) if not x][2:]
 
-def check_palindrome(number):
+def checkPalindrome(number):
     return str(number) == str(number)[::-1]
+
+def getPrimeFactors(number, primes = []):
+    if not primes:
+        primes = getPrimes(number + 1)
+    return [x for x in primes if number % x == 0]
+
+def getPrimeFactorization(number):
+    factorization = {}
+    factors = getPrimeFactors(number)
+    for factor in factors:
+        count = 0
+        while number % factor == 0:
+            count += 1
+            number = number / factor
+        factorization[factor] = count
+    return factorization
