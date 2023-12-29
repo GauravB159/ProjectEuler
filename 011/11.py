@@ -1,4 +1,4 @@
-from pelib import convert2DArrayToGrid, timed
+from pelib.basic import convert2DArrayToGrid, timed
 
 @timed
 def process(n):

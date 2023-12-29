@@ -1,4 +1,4 @@
-from pelib import timed
+from pelib.basic import timed
 
 cache = {}
 def fib(n):

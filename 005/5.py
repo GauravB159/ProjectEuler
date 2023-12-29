@@ -1,4 +1,4 @@
-from pelib import getPrimeFactorization, timed
+from pelib.basic import getPrimeFactorization, timed
 from math import pow
 
 @timed

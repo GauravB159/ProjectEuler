@@ -1,4 +1,4 @@
-from pelib import sumOfFirst, sumOfFirstSquared, timed
+from pelib.basic import sumOfFirst, sumOfFirstSquared, timed
 
 @timed
 def process(n):

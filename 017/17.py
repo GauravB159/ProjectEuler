@@ -1,4 +1,4 @@
-from pelib import timed
+from pelib.basic import timed
 
 def getRepresentation(n):
     mapper = {

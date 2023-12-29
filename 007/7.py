@@ -1,4 +1,4 @@
-from pelib import getPrimes, timed
+from pelib.basic import getPrimes, timed
 
 @timed
 def process(n):

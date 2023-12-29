@@ -1,4 +1,4 @@
-from pelib import timed
+from pelib.basic import timed
 
 @timed
 def process():
