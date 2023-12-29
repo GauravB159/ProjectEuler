@@ -6,3 +6,6 @@ def getPrimes(limit):
             primes[j * i] = True
         i += 1
     return [i for i, x in enumerate(primes) if not x][2:]
+
+def check_palindrome(number):
+    return str(number) == str(number)[::-1]
