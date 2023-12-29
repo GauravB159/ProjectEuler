@@ -55,3 +55,13 @@ def getNumberOfFactors(n, primes = False):
     pf = getPrimeFactorization(n, primes)
     num_factors = math.prod([(x + 1) for x in pf.values()])
     return num_factors
+
+def getFactors(n):
+    count = 1
+    factors = set()
+    while count * count <= n:
+        if n % count == 0:
+            factors.add(count)
+            factors.add(n // count)
+        count += 1
+    return list(factors)
