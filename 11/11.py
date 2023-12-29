@@ -18,4 +18,4 @@ def process(n):
     return max_
 
 
-print(process(4))
+process(4)

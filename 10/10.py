@@ -4,4 +4,4 @@ from pelib import getPrimes, timed
 def process(n):
     return sum(getPrimes(n))
 
-print(process(2_000_000))
+process(2_000_000)

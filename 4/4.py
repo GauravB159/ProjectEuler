@@ -10,4 +10,4 @@ def process(l, u):
                 max_ = i * j
     return max_
 
-print(process(100, 1000))
+process(100, 1000)

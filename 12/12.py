@@ -12,4 +12,4 @@ def process(n):
         i += 1
     return int(triangle)
 
-print(process(500))
+process(500)

@@ -8,4 +8,4 @@ def process(n):
             if not check:
                 return i * j * (n - i - j)
             
-print(process(1000))
+process(1000)

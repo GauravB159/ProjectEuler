@@ -23,4 +23,4 @@ def process(n):
     return result
 
 
-print(process(100))
+process(100)

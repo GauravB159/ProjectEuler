@@ -4,4 +4,4 @@ from pelib import sumOfFirst, sumOfFirstSquared, timed
 def process(n):
     return int(sumOfFirst(n) * sumOfFirst(n) - sumOfFirstSquared(n))
 
-print(process(100))
+process(100)

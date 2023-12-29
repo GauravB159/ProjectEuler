@@ -19,4 +19,4 @@ def process(limit):
         result *= pow(key, max_factors[key])
     return int(result)
 
-print(process(20))
+process(20)

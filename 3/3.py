@@ -11,4 +11,4 @@ def process(number):
     
     return result
 
-print(process(600_851_475_143))
+process(600_851_475_143)

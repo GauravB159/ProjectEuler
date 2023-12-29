@@ -12,4 +12,4 @@ def process(n):
         max_ = max(max_, prod)
     return max_
 
-print(process(13))
+process(13)

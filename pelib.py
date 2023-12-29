@@ -41,7 +41,7 @@ def timed(f):
         result = f(*args, **kwargs)
         print(f"Processing time: {(time.time() - start) * 1000:.2f}ms")
         print()
-        return result
+        print(f"Result: {result}")
     return inner
 
 def convert2DArrayToGrid(arr):
