@@ -1,6 +1,7 @@
-from lib import getPrimeFactorization
+from pelib import getPrimeFactorization, timed
 from math import pow
 
+@timed
 def process(limit):
     factors = []
     for i in range(limit):

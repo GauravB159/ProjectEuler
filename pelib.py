@@ -1,4 +1,4 @@
-import math
+import time
 
 def getPrimes(limit):
     primes = [False] * (limit + 1)
@@ -33,3 +33,12 @@ def sumOfFirst(n):
 
 def sumOfFirstSquared(n):
     return (n * (n + 1) * (2 * n + 1)) / 6
+
+def timed(f):
+    def inner(*args, **kwargs):
+        start = time.time()
+        result = f(*args, **kwargs)
+        print(f"Processing time: {(time.time() - start) * 1000:.2f}ms")
+        print()
+        return result
+    return inner

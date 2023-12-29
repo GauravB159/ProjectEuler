@@ -1,5 +1,6 @@
-from lib import checkPalindrome
+from pelib import checkPalindrome, timed
 
+@timed
 def process(l, u):
     max_ = 0
 

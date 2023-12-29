@@ -1,6 +1,6 @@
+from pelib import timed
+
 cache = {}
-
-
 def fib(n):
     if cache.get(n):
         return cache[n]
@@ -11,7 +11,7 @@ def fib(n):
     cache[n] = fib(n - 1) + fib(n - 2)
     return cache[n]
 
-
+@timed
 def process(n):
     result = 0
     for i in range(n):

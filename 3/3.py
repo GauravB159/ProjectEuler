@@ -1,6 +1,7 @@
-from lib import getPrimes
+from pelib import getPrimes, timed
 from math import sqrt
 
+@timed
 def process(number):
     primes = getPrimes(int(sqrt(number)))
     result = 0
