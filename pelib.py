@@ -1,4 +1,5 @@
 import time
+import math
 
 def getPrimes(limit):
     primes = [False] * (limit + 1)
@@ -17,9 +18,9 @@ def getPrimeFactors(number, primes = []):
         primes = getPrimes(number + 1)
     return [x for x in primes if number % x == 0]
 
-def getPrimeFactorization(number):
+def getPrimeFactorization(number, primes = False):
     factorization = {}
-    factors = getPrimeFactors(number)
+    factors = getPrimeFactors(int(number), primes)
     for factor in factors:
         count = 0
         while number % factor == 0:
@@ -49,3 +50,8 @@ def convert2DArrayToGrid(arr):
         for j, col in enumerate(row):
             grid[complex(i, j)] = col
     return grid
+
+def getNumberOfFactors(n, primes = False):
+    pf = getPrimeFactorization(n, primes)
+    num_factors = math.prod([(x + 1) for x in pf.values()])
+    return num_factors
