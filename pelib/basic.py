@@ -70,3 +70,11 @@ def factorial(n):
     if n <= 1:
         return 1
     return n * factorial(n - 1)
+
+def isPrime(n):
+    count = 2
+    while count * count <= n:
+        if n % count == 0:
+            return False
+        count += 1
+    return True
