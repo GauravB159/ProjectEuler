@@ -93,3 +93,6 @@ def getLexicographicNumber(n, r, start = 1):
         numbers.remove(numbers[pos])
     answer = answer + str(numbers[0])
     return answer
+
+def nCr(n, r):
+    return factorial(n) / (factorial(r) * factorial(n - r))
