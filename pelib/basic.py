@@ -16,7 +16,8 @@ def checkPalindrome(number):
 def getPrimeFactors(number, primes = []):
     if not primes:
         primes = getPrimes(number + 1)
-    return [x for x in primes if number % x == 0]
+    factors = getFactors(number)
+    return [x for x in factors if primes.get(x, False)]
 
 def getPrimeFactorization(number, primes = False):
     factorization = {}
