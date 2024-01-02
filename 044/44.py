@@ -9,6 +9,6 @@ def process():
                 continue
             if not pentagonal.get(i - j, False):
                 continue
-            print(abs(i - j))
+            return abs(i - j)
 
 process()
