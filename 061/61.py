@@ -25,8 +25,6 @@ def process():
 
 
     def recurse(level, term, remaining_levels, visited):
-        if term == '81' and not visited:
-            pass
         if not remaining_levels:
             return
         if term not in mappedSeries[level]:
